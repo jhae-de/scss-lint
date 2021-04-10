@@ -1,0 +1,41 @@
+customSyntax: 'postcss-scss'
+plugins:
+  - stylelint-scss
+rules:
+  scss/at-each-key-value-single-line: true
+  scss/at-extend-no-missing-placeholder: true
+  scss/at-function-named-arguments:
+    - always
+    - ignore:
+        - single-argument
+  scss/at-function-pattern:
+    - ^[_-]?[a-z]+([a-z0-9-]+[a-z0-9]+)?$
+    - message: Function name should be written in lower kebab case (scss/at-function-pattern)
+  scss/at-if-no-null: true
+  scss/at-import-no-partial-leading-underscore: true
+  scss/at-import-partial-extension: never
+  scss/at-mixin-named-arguments:
+    - always
+    - ignore:
+        - single-argument
+  scss/at-mixin-pattern:
+    - ^[_-]?[a-z]+([a-z0-9-]+[a-z0-9]+)?$
+    - message: Mixin name should be written in lower kebab case (scss/at-mixin-pattern)
+  scss/at-rule-no-unknown: true
+  scss/comment-no-empty: true
+  scss/dimension-no-non-numeric-values: true
+  scss/dollar-variable-no-missing-interpolation: true
+  scss/dollar-variable-pattern:
+    - ^[_-]?[a-z]+([a-z0-9-]+[a-z0-9]+)?$
+    - message: Variable should be written in lower kebab case (scss/dollar-variable-pattern)
+  scss/function-color-relative: true
+  scss/function-quote-no-quoted-strings-inside: true
+  scss/function-unquote-no-unquoted-strings-inside: true
+  scss/map-keys-quotes: always
+  scss/no-duplicate-mixins: true
+  scss/no-global-function-names: true
+  scss/partial-no-import: true
+  scss/percent-placeholder-pattern:
+    - ^[_-]?[a-z]+([a-z0-9-]+[a-z0-9]+)?$
+    - message: Placeholder should be written in lower kebab case (scss/percent-placeholder-pattern)
+  scss/selector-no-redundant-nesting-selector: true

@@ -1,0 +1,10 @@
+{
+  "extends": "@tsconfig/node16/tsconfig.json",
+  "compilerOptions": {
+    "rootDirs": ["./src/", "./test/"],
+    "outDir": "./build/",
+    "removeComments": true,
+    "noImplicitAny": true
+  },
+  "include": ["./src/stylelint.config.ts"]
+}

@@ -1,0 +1,10 @@
+version: '3.9'
+
+services:
+  app:
+    image: ${DOCKER_IMAGE}
+    container_name: ${DOCKER_CONTAINER_NAME}
+    user: ${DOCKER_CONTAINER_USER}
+    working_dir: ${DOCKER_CONTAINER_WORKDIR}
+    volumes:
+      - .:${DOCKER_CONTAINER_WORKDIR}

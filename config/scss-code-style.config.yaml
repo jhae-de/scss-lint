@@ -1,0 +1,32 @@
+customSyntax: 'postcss-scss'
+plugins:
+  - stylelint-scss
+rules:
+  scss/at-else-empty-line-before: never
+  scss/at-function-parentheses-space-before: never
+  scss/at-mixin-argumentless-call-parentheses: always
+  scss/at-mixin-parentheses-space-before: never
+  scss/dollar-variable-colon-newline-after: null
+  scss/dollar-variable-colon-space-after: always
+  scss/dollar-variable-colon-space-before: never
+  scss/dollar-variable-empty-line-after:
+    - always
+    - except:
+        - last-nested
+        - before-dollar-variable
+      ignore:
+        - before-comment
+        - inside-single-line-block
+  scss/dollar-variable-first-in-block:
+    - true
+    - ignore:
+        - comments
+        - imports
+      except:
+        - root
+  scss/double-slash-comment-empty-line-before: null
+  scss/double-slash-comment-inline: never
+  scss/double-slash-comment-whitespace-inside: always
+  scss/operator-no-newline-after: true
+  scss/operator-no-newline-before: true
+  scss/operator-no-unspaced: true
